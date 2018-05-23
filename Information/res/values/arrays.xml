@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="collegemenu">
+        <item>材料学院</item>
+        <item>创新创业学院</item>
+        <item>电气学院</item>
+        <item>电信学院</item>
+        <item>法学院</item>
+        <item>公管学院</item>
+        <item>管理学院</item>
+        <item>国际教育学院</item>
+        <item>航天学院</item>
+        <item>化工学院</item>
+        <item>机械学院</item>
+        <item>继续教育学院</item>
+        <item>金禾经济中心</item>
+        <item>经金学院</item>
+        <item>理学院</item>
+        <item>马克思主义学院</item>
+        <item>能动学院</item>
+        <item>前沿院</item>
+        <item>人居学院</item>
+        <item>人文学院</item>
+        <item>软件学院</item>
+        <item>生命学院</item>
+        <item>食品装备学院</item>
+        <item>数学学院</item>
+        <item>体育中心</item>
+        <item>外国语学院</item>
+        <item>网络教育学院</item>
+        <item>新媒体学院</item>
+        <item>医学部</item>
+        
+        
+    </string-array>
+    
+</resources>
