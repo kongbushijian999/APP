@@ -64,7 +64,6 @@ public class MainActivity extends FragmentActivity implements OnPageChangeListen
 
 		initView();
 
-
 	}
 
 	public void initView() {
