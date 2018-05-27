@@ -3,91 +3,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    
-	<android.support.v4.view.ViewPager  
-        android:id="@+id/myviewpager"  
-        android:layout_width="fill_parent"  
-        android:layout_height="0dp"  
-        android:layout_weight="7">  
-    </android.support.v4.view.ViewPager>
-    
-     <!-- 指示标签 -->  
-     <LinearLayout   
-        android:id="@+id/cursorarea"  
-        android:layout_width="fill_parent"  
-        android:background="#CDCDCD"  
-        android:orientation="horizontal"  
-        android:layout_height="2dp">  
-        <ImageView  
-            android:id="@+id/cursor_btn"  
-            android:layout_width="fill_parent"  
-            android:layout_height="fill_parent">  
-        </ImageView>  
-    </LinearLayout>  
 
-    <RelativeLayout   
-        android:id="@+id/bottomlinear"  
-        android:layout_width="match_parent"  
-        android:layout_height="0dp"  
-        android:layout_weight="1"   
-        android:background="#DCDCDC">  -->
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" >
         
-        <RadioGroup
-        android:id="@+id/rg_menu"
+        
+        
+    </FrameLayout>
+    <!-- 指示标签 -->
+
+    <LinearLayout
+        android:id="@+id/cursorarea"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#CDCDCD"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/cursor_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomlinear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:padding="5dp" >
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#DCDCDC" >
 
-
-        <RadioButton
-            android:id="@+id/btn_first"  
-            android:layout_width="0dp"  
+        <RadioGroup
+            android:id="@+id/rg_menu"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"  
-            android:padding="-5dp"  
-            android:textSize="14sp"
-             android:button="@null" 
-            android:gravity="center"
-            android:text="主要"  
-            android:checked="true"
-            android:drawableTop="@drawable/firstbutton"/>
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp" >
 
-        <RadioButton
-            android:id="@+id/btn_second"  
-            android:layout_width="0dp"  
-            android:layout_height="wrap_content"
-            android:layout_weight="1"  
-            android:textSize="14sp" 
-             android:button="@null" 
-            android:gravity="center" 
-             android:text="爱好"
-             android:drawableTop="@drawable/secondbutton" />
+            <RadioButton
+                android:id="@+id/btn_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/firstbutton"
+                android:gravity="center"
+                android:padding="-5dp"
+                android:text="主要"
+                android:textSize="14sp" />
 
-        <RadioButton
-            android:id="@+id/btn_third"  
-            android:layout_width="0dp"  
-            android:layout_height="wrap_content"
-            android:layout_weight="1"  
-            android:textSize="14sp"
-            android:button="@null" 
-            android:gravity="center"  
-            android:text="定时"
-            android:drawableTop="@drawable/thirdbutton" />
+            <RadioButton
+                android:id="@+id/btn_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/secondbutton"
+                android:gravity="center"
+                android:text="爱好"
+                android:textSize="14sp" />
 
-        <RadioButton
-            android:id="@+id/btn_four"  
-            android:layout_width="0dp"  
-            android:layout_height="wrap_content"  
-            android:layout_weight="1"  
-            android:textSize="14sp"
-             android:button="@null" 
-            android:gravity="center"  
-            android:text="个人"
-            android:drawableTop="@drawable/fourthbutton"/>
-    </RadioGroup>         
-    </RelativeLayout>>
+            <RadioButton
+                android:id="@+id/btn_third"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/thirdbutton"
+                android:gravity="center"
+                android:text="定时"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/btn_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/fourthbutton"
+                android:gravity="center"
+                android:text="个人"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </RelativeLayout>
 
 </LinearLayout>

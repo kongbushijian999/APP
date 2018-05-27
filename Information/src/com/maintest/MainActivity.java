@@ -46,10 +46,11 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO 自动生成的方法存根
-				Intent intent = new Intent(MainActivity.this, FirstActivity.class);
+				Intent intent = new Intent(MainActivity.this, SecondActivity.class);
 				startActivity(intent);
 			}
 		});
+		
 		
 	}
 

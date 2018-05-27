@@ -16,7 +16,7 @@ public class LectureDao {
         conn = util.connectionDB(); 
         st = conn.createStatement();  
     }  
-    //将讲座的信息存入数据库
+    /*//将讲座的信息存入数据库
     public void insert(String lecture_title, String lecture_time, String lecture_location, String lecturer, String lecture_content, String lecturer_introduction, String lecture_video) throws Exception{
 		// 生成一条SQL语句
 		String sql = "insert into lecture(lecture_title,lecture_time,lecture_location,lecturer,lecture_content,lecturer_introduction,lecture_video) values(?,?,?,?,?,?,?)";
@@ -31,9 +31,28 @@ public class LectureDao {
 		
 		System.out.println(sql);
 		ps.executeUpdate();// 执行sql语句
+    }*/
+    
+  //将讲座的信息存入数据库
+    public void insert(String lecture_title, String lecture_time, String lecture_location, String lecturer, String lecture_content, String lecturer_introduction, String lecture_video) throws Exception{
+		// 生成一条SQL语句
+		String sql = "insert into lecture(lecture_title,lecture_time,lecture_location) values(?,?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql);// 创建一个Statement对象
+		ps.setString(1, lecture_title);
+		ps.setString(2, lecture_time);
+		ps.setString(3, lecture_location);
 		
-    	
+		
+		System.out.println(sql);
+		ps.executeUpdate();// 执行sql语句
     }
     
+    //查询是否已经存在数据库里
+    public Boolean check(String linkText) {
+    	
+    	String sql = "select count(*) from table where 学校名 = 'xx学校'";//这里也可以写成select *,不同的方法 
+		return null;
+    	
+    }
 
 }

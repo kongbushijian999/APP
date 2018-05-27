@@ -71,4 +71,20 @@ public class JsoupDemo {
         return ls;  
     }  
 
+    //添加最新的信息
+    public static String newlecture() throws IOException {
+    	String url = "http://meeting.xjtu.edu.cn/lecturenotices/list/1";
+    	Connection conn = Jsoup.connect(url).timeout(30000);  
+        Document doc = conn.get();
+        
+        Element masthead = doc.select("ul.d-list").first();
+        System.out.println(masthead);
+        
+        Element link = masthead.select("a").first();//查找第一个a元素
+        System.out.println(link);
+        
+        String linkText = link.text(); // "example""//取得链接地址中的文本
+        System.out.println(linkText);
+        return linkText;
+    }
 }

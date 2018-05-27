@@ -8,6 +8,11 @@ import com.dao.LectureDao;
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
+		lecturestart();
+       addnewlecture();
+	}
+
+	public static void lecturestart() throws Exception {
 		int k = 0;                       //用来计数  
         LectureDao md = new LectureDao();  //用来对获取到的数据插入数据库  
         
@@ -24,7 +29,14 @@ public class Main {
             md.insert(e.getLecture_title(), e.getLecture_time(), e.getLecture_location(), e.getLecturer(), e.getLecture_content(), e.getLecturer_introduction(), e.getLecture_video());
             System.out.println(k);  
         }  
-       
 	}
-
+	
+	public static void addnewlecture() throws Exception {
+		LectureDao md = new LectureDao();  //用来对获取到的数据插入数据库
+		//获取JsoupDemo类的对象
+        JsoupDemo jsoup = new JsoupDemo();  
+        String linkText = jsoup.newlecture();
+        
+        
+	}
 }

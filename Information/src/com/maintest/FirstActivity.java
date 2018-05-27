@@ -16,17 +16,12 @@ import com.fragment.ThirdFragment;
 import com.adapter.MyFragmentPagerAdapter;
 
 import com.fragment.FixedSpeedScroller;
-import android.app.Activity;
 import android.graphics.Color;
-import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.Toast;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class FirstActivity extends FragmentActivity implements  OnPageChangeListener{  
@@ -54,11 +49,29 @@ public class FirstActivity extends FragmentActivity implements  OnPageChangeList
         super.onCreate(savedInstanceState);  
         setContentView(R.layout.first);  
           
-        initView();  
+        //initView();  
         
-    }  
+    }
+
+	@Override
+	public void onPageScrollStateChanged(int arg0) {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void onPageScrolled(int arg0, float arg1, int arg2) {
+		// TODO 自动生成的方法存根
+		
+	}
+
+	@Override
+	public void onPageSelected(int arg0) {
+		// TODO 自动生成的方法存根
+		
+	}  
       
-    public void initView(){  
+/*    public void initView(){  
         myviewpager = (ViewPager)this.findViewById(R.id.myviewpager);  
         //ViewPager的setCurrentItem是跳转到ViewPager的指定页面，
         //但在使用这个方法的时候有个问题，跳转的时候有滑动效果，
@@ -96,10 +109,10 @@ public class FirstActivity extends FragmentActivity implements  OnPageChangeList
        
        
         myviewpager.setOnPageChangeListener(this);  
-       /* btn_first.setOnClickListener(this);  
+        btn_first.setOnClickListener(this);  
         btn_second.setOnClickListener(this);  
         btn_third.setOnClickListener(this);  
-        btn_four.setOnClickListener(this);  */
+        btn_four.setOnClickListener(this);  
         
         btn_first.setOnCheckedChangeListener(new InnerOnCheckedChangeListener());
 		btn_second.setOnCheckedChangeListener(new InnerOnCheckedChangeListener());
@@ -259,6 +272,6 @@ public class FirstActivity extends FragmentActivity implements  OnPageChangeList
   	    cursor.setX(cursorX+btnArgs[curItem].getPaddingLeft());   
   	}  
   	
-  
+  */
 }
 
