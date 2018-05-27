@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
 		
 		Button mainlogin = (Button)findViewById(R.id.mainlogin);
 		Button mainregister = (Button)findViewById(R.id.mainregister);
+		Button mainvisitor = (Button)findViewById(R.id.mainvisitor);
 		mainlogin.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -38,6 +40,17 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
+		mainvisitor.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO 自动生成的方法存根
+				Intent intent = new Intent(MainActivity.this, FirstActivity.class);
+				startActivity(intent);
+			}
+		});
+		
 	}
 
 	@Override

@@ -5,13 +5,14 @@
     android:orientation="vertical" >
     
     
-<android.support.v4.view.ViewPager  
+	<android.support.v4.view.ViewPager  
         android:id="@+id/myviewpager"  
         android:layout_width="fill_parent"  
         android:layout_height="0dp"  
-        android:layout_weight="8">  
+        android:layout_weight="7">  
     </android.support.v4.view.ViewPager>
-    <!-- 指示标签 -->  
+    
+     <!-- 指示标签 -->  
      <LinearLayout   
         android:id="@+id/cursorarea"  
         android:layout_width="fill_parent"  
@@ -31,14 +32,14 @@
         android:layout_height="0dp"  
         android:layout_weight="1"   
         android:background="#DCDCDC">  -->
-           <RadioGroup
+        
+        <RadioGroup
         android:id="@+id/rg_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:padding="5dp"   
-        >
+        android:padding="5dp" >
 
 
         <RadioButton
@@ -50,7 +51,7 @@
             android:textSize="14sp"
              android:button="@null" 
             android:gravity="center"
-            android:text="最新"  
+            android:text="主要"  
             android:checked="true"
             android:drawableTop="@drawable/firstbutton"/>
 
@@ -62,7 +63,7 @@
             android:textSize="14sp" 
              android:button="@null" 
             android:gravity="center" 
-             android:text="前端"
+             android:text="爱好"
              android:drawableTop="@drawable/secondbutton" />
 
         <RadioButton
@@ -73,8 +74,8 @@
             android:textSize="14sp"
             android:button="@null" 
             android:gravity="center"  
-            android:text="移动"
-            android:drawableTop="@drawable/thridbutton" />
+            android:text="定时"
+            android:drawableTop="@drawable/thirdbutton" />
 
         <RadioButton
             android:id="@+id/btn_four"  
@@ -84,8 +85,8 @@
             android:textSize="14sp"
              android:button="@null" 
             android:gravity="center"  
-            android:text="语言"
-            android:drawableTop="@drawable/fourbutton"/>
+            android:text="个人"
+            android:drawableTop="@drawable/fourthbutton"/>
     </RadioGroup>         
     </RelativeLayout>>
 
