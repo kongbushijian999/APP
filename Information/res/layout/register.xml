@@ -4,7 +4,7 @@
     android:layout_height="fill_parent" >
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/reusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -12,21 +12,21 @@
         android:inputType="textPersonName" />
 
     <Spinner
-        android:id="@+id/college"
+        android:id="@+id/recollege"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="请选择学院"
         android:entries="@array/collegemenu" />
 
-    <EditText
-        android:id="@+id/hobby"
+    <Spinner
+        android:id="@+id/rehobby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="请填写爱好"
-        android:ems="10" />
+        android:hint="请选择爱好"
+        android:entries="@array/hobbymenu" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/reemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -37,7 +37,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/repassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -45,7 +45,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/passwordtwo"
+        android:id="@+id/repasswordtwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

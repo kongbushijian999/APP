@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="collegemenu">
+        <item>选择学院</item>
         <item>材料学院</item>
         <item>创新创业学院</item>
         <item>电气学院</item>
@@ -32,6 +33,15 @@
         <item>医学部</item>
         
         
+    </string-array>
+    <string-array name="hobbymenu">
+        <item>请选择爱好</item>
+        <item>足球</item>
+        <item>音乐</item>
+        <item>绘画</item>
+        <item>游戏</item>
+        <item>时政</item>
+        <item>动漫</item>
     </string-array>
     
 </resources>

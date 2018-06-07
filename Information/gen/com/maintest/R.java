@@ -10,6 +10,7 @@ package com.maintest;
 public final class R {
     public static final class array {
         public static final int collegemenu=0x7f040000;
+        public static final int hobbymenu=0x7f040001;
     }
     public static final class attr {
     }
@@ -30,69 +31,131 @@ public final class R {
         public static final int hobby=0x7f020002;
         public static final int hobbychecked=0x7f020003;
         public static final int ic_launcher=0x7f020004;
-        public static final int logo=0x7f020005;
-        public static final int main=0x7f020006;
-        public static final int mainchecked=0x7f020007;
-        public static final int secondbutton=0x7f020008;
-        public static final int thirdbutton=0x7f020009;
-        public static final int time=0x7f02000a;
-        public static final int timechecked=0x7f02000b;
-        public static final int user=0x7f02000c;
-        public static final int userchecked=0x7f02000d;
+        public static final int jpush_ic_richpush_actionbar_back=0x7f020005;
+        public static final int jpush_ic_richpush_actionbar_divider=0x7f020006;
+        public static final int jpush_richpush_btn_selector=0x7f020007;
+        public static final int jpush_richpush_progressbar=0x7f020008;
+        public static final int logo=0x7f020009;
+        public static final int main=0x7f02000a;
+        public static final int mainchecked=0x7f02000b;
+        public static final int secondbutton=0x7f02000c;
+        public static final int shape=0x7f02000d;
+        public static final int thirdbutton=0x7f02000e;
+        public static final int time=0x7f02000f;
+        public static final int timechecked=0x7f020010;
+        public static final int user=0x7f020011;
+        public static final int userchecked=0x7f020012;
+        public static final int usertou=0x7f020013;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001d;
-        public static final int bottomlinear=0x7f09000a;
-        public static final int btn_first=0x7f09000c;
-        public static final int btn_four=0x7f09000f;
-        public static final int btn_second=0x7f09000d;
-        public static final int btn_third=0x7f09000e;
-        public static final int button1=0x7f090017;
-        public static final int college=0x7f090012;
-        public static final int cursor_btn=0x7f090009;
-        public static final int cursorarea=0x7f090008;
-        public static final int datePicker1=0x7f090005;
-        public static final int email=0x7f090014;
-        public static final int fragment=0x7f090007;
-        public static final int hobby=0x7f090013;
-        public static final int imageButton1=0x7f090018;
-        public static final int imageButton2=0x7f090019;
-        public static final int imageButton3=0x7f09001a;
-        public static final int imageButton4=0x7f09001b;
-        public static final int login=0x7f090011;
+        public static final int action_settings=0x7f090052;
+        public static final int actionbarLayoutId=0x7f09001f;
+        public static final int addnewnet=0x7f09001c;
+        public static final int bottom=0x7f09003c;
+        public static final int fbottom=0x7f090007;
+        public static final int fimageButton1=0x7f09000b;
+        public static final int fimageButton2=0x7f09000c;
+        public static final int fimageButton3=0x7f09000d;
+        public static final int fimageButton4=0x7f09000e;
+        public static final int ftextView1=0x7f090008;
+        public static final int ftextView2=0x7f090009;
+        public static final int ftextView3=0x7f09000a;
+        public static final int fullWebView=0x7f090025;
+        public static final int hobbybottom=0x7f09000f;
+        public static final int hobbytextView1=0x7f090010;
+        public static final int hobbytextView10=0x7f090019;
+        public static final int hobbytextView2=0x7f090011;
+        public static final int hobbytextView3=0x7f090012;
+        public static final int hobbytextView4=0x7f090013;
+        public static final int hobbytextView5=0x7f090014;
+        public static final int hobbytextView6=0x7f090015;
+        public static final int hobbytextView7=0x7f090016;
+        public static final int hobbytextView8=0x7f090017;
+        public static final int hobbytextView9=0x7f090018;
+        public static final int imageButton1=0x7f090042;
+        public static final int imageButton2=0x7f090043;
+        public static final int imageButton3=0x7f090044;
+        public static final int imageButton4=0x7f090045;
+        public static final int imgRichpushBtnBack=0x7f090021;
+        public static final int imgView=0x7f090022;
+        public static final int lecture=0x7f090034;
+        public static final int linelecture=0x7f09003a;
+        public static final int linenotice=0x7f090031;
+        public static final int login=0x7f090028;
         public static final int mainlogin=0x7f090000;
-        public static final int mainregister=0x7f090003;
-        public static final int mainvisitor=0x7f090004;
-        public static final int password=0x7f090002;
-        public static final int passwordtwo=0x7f090015;
-        public static final int register=0x7f090016;
-        public static final int rg_menu=0x7f09000b;
-        public static final int textView1=0x7f090010;
-        public static final int textView3=0x7f09001c;
-        public static final int timePicker1=0x7f090006;
-        public static final int username=0x7f090001;
+        public static final int mainregister=0x7f090001;
+        public static final int mainusertou=0x7f090002;
+        public static final int mainvisitor=0x7f090003;
+        public static final int newnettitle=0x7f09001a;
+        public static final int newneturl=0x7f09001b;
+        public static final int notice=0x7f090033;
+        public static final int noticetextView1=0x7f090035;
+        public static final int noticetextView2=0x7f090036;
+        public static final int noticetextView3=0x7f090037;
+        public static final int noticetextView4=0x7f090038;
+        public static final int noticetextView5=0x7f090039;
+        public static final int password=0x7f090027;
+        public static final int popLayoutId=0x7f09001d;
+        public static final int pushPrograssBar=0x7f090024;
+        public static final int recollege=0x7f09002b;
+        public static final int reemail=0x7f09002d;
+        public static final int register=0x7f090030;
+        public static final int rehobby=0x7f09002c;
+        public static final int repassword=0x7f09002e;
+        public static final int repasswordtwo=0x7f09002f;
+        public static final int reusername=0x7f09002a;
+        public static final int rlRichpushTitleBar=0x7f090020;
+        public static final int showusercollege=0x7f090047;
+        public static final int showuseremail=0x7f090049;
+        public static final int showuserhobby=0x7f090048;
+        public static final int showusername=0x7f090046;
+        public static final int start_system_clock_bt=0x7f090006;
+        public static final int textView1=0x7f09003d;
+        public static final int textView2=0x7f09003e;
+        public static final int textView3=0x7f09003f;
+        public static final int textView4=0x7f090040;
+        public static final int textView5=0x7f090041;
+        public static final int textlecture=0x7f09003b;
+        public static final int textnotice=0x7f090032;
+        public static final int timePicker=0x7f090005;
+        public static final int tv1=0x7f090004;
+        public static final int tvRichpushTitle=0x7f090023;
+        public static final int tv_result=0x7f090029;
+        public static final int uaddnewnet=0x7f090050;
+        public static final int udeletenet=0x7f090051;
+        public static final int uhobbybottom=0x7f09004a;
+        public static final int unewnettitle=0x7f09004e;
+        public static final int unewneturl=0x7f09004f;
+        public static final int username=0x7f090026;
+        public static final int utextView1=0x7f09004b;
+        public static final int utextView2=0x7f09004c;
+        public static final int utextView3=0x7f09004d;
+        public static final int wvPopwin=0x7f09001e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int calendar=0x7f030001;
         public static final int first=0x7f030002;
         public static final int hobby=0x7f030003;
-        public static final int layout_first=0x7f030004;
-        public static final int layout_fourth=0x7f030005;
-        public static final int layout_second=0x7f030006;
-        public static final int layout_third=0x7f030007;
-        public static final int login=0x7f030008;
-        public static final int register=0x7f030009;
-        public static final int second=0x7f03000a;
-        public static final int usercenter=0x7f03000b;
+        public static final int jpush_popwin_layout=0x7f030004;
+        public static final int jpush_webview_layout=0x7f030005;
+        public static final int layout_first=0x7f030006;
+        public static final int layout_fourth=0x7f030007;
+        public static final int layout_second=0x7f030008;
+        public static final int layout_third=0x7f030009;
+        public static final int login=0x7f03000a;
+        public static final int register=0x7f03000b;
+        public static final int second=0x7f03000c;
+        public static final int usercenter=0x7f03000d;
+        public static final int userhobby=0x7f03000e;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
+        public static final int action_settings=0x7f070002;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
     }
     public static final class style {
         /** 
@@ -116,10 +179,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f060001;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f060002;
+        public static final int MyDialogStyle=0x7f060000;
     }
 }

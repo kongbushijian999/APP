@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-api-1.7.7.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-log4j12-1.7.7.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jpush-client-3.3.3.jar"/>
+	<classpathentry kind="lib" path="E:/迅雷下载/jpush-api-java-client-3.3.6/jpush-api-java-client-3.3.6/jiguang-common-1.1.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

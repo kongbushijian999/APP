@@ -4,10 +4,49 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <ImageView
+        android:id="@+id/mainusertou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="用户中心" />
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/usertou" />
+    
+
+    <TextView
+        android:id="@+id/showusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="40sp"
+        android:text="用户名：" />
+    
+    <TextView
+        android:id="@+id/showusercollege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="学院：" />
+    
+    <TextView
+        android:id="@+id/showuserhobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="爱好：" />
+    
+    <TextView
+        android:id="@+id/showuseremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="邮箱：" />
 
 </LinearLayout>

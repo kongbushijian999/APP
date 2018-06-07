@@ -1,13 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hobby" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/hobbybottom"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/hobbytextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="揭秘莫雷诺无缘世界杯:申花帮忙隐瞒伤势未果"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="郑铮出国康复伤停1个月 鲁能将换外援西塞难留 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="莫雷诺落选哥伦比亚世界杯名单 6月14日将归队 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="上港集结备战足协杯 国脚悉数回归进行短暂休整 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="歹徒持枪抢劫佩莱格里尼 与警方枪战暂未被抓捕 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="鲁能华夏或达成私下协议 高准翼归属案暂无进展 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="权健正式提交中超赛程调整申请 等足协协调结果 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="泰达引援工作有进展锁定边前卫 不会替换乔纳森 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="中超9将战世界杯创纪录 莫雷诺权敬原遗憾落选 "
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/hobbytextView10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="国足对手当地次级别联赛球员 大多97-99年龄段 "
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/hobbybottom"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <EditText
+            android:id="@+id/newnettitle"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="填写网站的名称" />
+
+        <EditText
+            android:id="@+id/newneturl"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newnettitle"
+            android:ems="10"
+            android:hint="填写网站的网址" />
+
+        <Button
+            android:id="@+id/addnewnet"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="添加" />
+
+        
+    </RelativeLayout>
+<!-- <Button
+            android:id="@+id/deletenet"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="删除" /> -->
+       
+</RelativeLayout>

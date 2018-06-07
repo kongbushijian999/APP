@@ -9,4 +9,38 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>RegisterServlet</servlet-name>
+      <servlet-class>com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>RegisterServlet</servlet-name>
+      <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>HobbyServlet</servlet-name>
+      <servlet-class>com.servlet.HobbyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>HobbyServlet</servlet-name>
+      <url-pattern>/HobbyServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+      <servlet-name>UserHobbyServlet</servlet-name>
+      <servlet-class>com.servlet.UserHobbyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>UserHobbyServlet</servlet-name>
+      <url-pattern>/UserHobbyServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

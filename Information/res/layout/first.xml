@@ -1,95 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <FrameLayout
-        android:id="@+id/fragment"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7" >
-        
-        
-        
-    </FrameLayout>
-    <!-- 指示标签 -->
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/fbottom"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
 
-    <LinearLayout
-        android:id="@+id/cursorarea"
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="#CDCDCD"
-        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <ImageView
-            android:id="@+id/cursor_btn"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-        </ImageView>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/ftextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:text="美国研究生备考与海外学习生活" />
+            
+            <TextView
+                android:id="@+id/ftextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:text="美国研究生备考与海外学习生活" />
+            <TextView
+                android:id="@+id/ftextView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:text="美国研究生备考与海外学习生活" />
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/bottomlinear"
+        android:id="@+id/fbottom"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#DCDCDC" >
+        android:layout_height="75sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
 
-        <RadioGroup
-            android:id="@+id/rg_menu"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/fimageButton1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:padding="5dp" >
+            android:drawableTop="@drawable/main"
+            android:text="通知讲座" />
 
-            <RadioButton
-                android:id="@+id/btn_first"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:checked="true"
-                android:drawableTop="@drawable/firstbutton"
-                android:gravity="center"
-                android:padding="-5dp"
-                android:text="主要"
-                android:textSize="14sp" />
+        <Button
+            android:id="@+id/fimageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fimageButton1"
+            android:drawableTop="@drawable/hobby"
+            android:text="兴趣" />
 
-            <RadioButton
-                android:id="@+id/btn_second"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:drawableTop="@drawable/secondbutton"
-                android:gravity="center"
-                android:text="爱好"
-                android:textSize="14sp" />
+        <Button
+            android:id="@+id/fimageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fimageButton2"
+            android:drawableTop="@drawable/time"
+            android:text="定时" />
 
-            <RadioButton
-                android:id="@+id/btn_third"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:drawableTop="@drawable/thirdbutton"
-                android:gravity="center"
-                android:text="定时"
-                android:textSize="14sp" />
-
-            <RadioButton
-                android:id="@+id/btn_four"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:button="@null"
-                android:drawableTop="@drawable/fourthbutton"
-                android:gravity="center"
-                android:text="个人"
-                android:textSize="14sp" />
-        </RadioGroup>
+        <Button
+            android:id="@+id/fimageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fimageButton3"
+            android:drawableTop="@drawable/user"
+            android:text="个人" />
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

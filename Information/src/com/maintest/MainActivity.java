@@ -1,5 +1,8 @@
 package com.maintest;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import cn.jpush.android.api.JPushInterface;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +21,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		JPushInterface.setDebugMode(true);//如果时正式版就改成false
+		JPushInterface.init(this);
 		
 		Button mainlogin = (Button)findViewById(R.id.mainlogin);
 		Button mainregister = (Button)findViewById(R.id.mainregister);

@@ -3,53 +3,35 @@ package com.bean;
 import java.util.Date;
 
 public class Notice {
-	/*
-	private String title;
-	private String department;
-	private Date date;
-	private int frequency;
-	private String content;
-	private String img_url;
 	
-	public String getTitle() {
-		return title;
+	private int notice_id;
+	private String notice_title;
+	private String notice_time;
+	private String notice_url;
+	public int getNotice_id() {
+		return notice_id;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setNotice_id(int notice_id) {
+		this.notice_id = notice_id;
 	}
-	public String getDepartment() {
-		return department;
+	public String getNotice_title() {
+		return notice_title;
 	}
-	public void setDepartment(String department) {
-		this.department = department;
+	public void setNotice_title(String notice_title) {
+		this.notice_title = notice_title;
 	}
-	public Date getDate() {
-		return date;
+	public String getNotice_time() {
+		return notice_time;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setNotice_time(String notice_time) {
+		this.notice_time = notice_time;
 	}
-	public int getFrequency() {
-		return frequency;
+	public String getNotice_url() {
+		return notice_url;
 	}
-	public void setFrequency(int frequency) {
-		this.frequency = frequency;
+	public void setNotice_url(String notice_url) {
+		this.notice_url = notice_url;
 	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
-	public String getImg_url() {
-		return img_url;
-	}
-	public void setImg_url(String img_url) {
-		this.img_url = img_url;
-	}
-	
-	*/
-	
 	
 
 }

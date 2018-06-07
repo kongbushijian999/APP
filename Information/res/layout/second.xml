@@ -3,66 +3,222 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    
-    <FrameLayout
-        android:id="@+id/fragment"
-        android:layout_width="fill_parent"
-        android:layout_height="380dp"
-         >
-        <Button  
-        android:id="@+id/button1"  
-        android:text="左侧为按钮中的图像"      
-        android:drawableLeft="@drawable/logo" 
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content"              
-        />  
-    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linenotice"
+        android:layout_width="match_parent"
+        android:layout_height="190sp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textnotice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  
+            android:layout_alignParentTop="true"
+            android:background="#66ff66"
+            android:gravity="center"
+            android:text="通知"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:id="@+id/notice"
+            android:layout_width="fill_parent"
+            android:layout_height="160sp"
+            android:layout_above="@+id/lecture"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/noticetextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="关于教育部在线教育研究中心2018年度智慧教学项目申报的通知 "
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/noticetextView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="关于MeTeL教学资源数据库试用的通知 "
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/noticetextView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="关于2018年秋季学期混合式教学计划申报的通知"
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/noticetextView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="2018年华为技术有限公司“云计算菁英班”补充招生的通知 "
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/noticetextView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="关于开展第十届西安交通大学教学名师奖评选表彰工作的通知 "
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linelecture"
+        android:layout_below="@+id/linenotice"
+        android:layout_width="match_parent"
+        android:layout_height="190sp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textlecture"
+            android:layout_width="fill_parent"
+            android:layout_height="30sp"
+             android:layout_alignParentTop="true"
+             android:background="#66ff66"
+             android:gravity="center"
+            android:text="讲座"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:id="@+id/lecture"
+            android:layout_width="fill_parent"
+            android:layout_height="160sp"
+            android:layout_above="@+id/bottom"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="Philosophical Foundations of Cognitive Science系列讲座五：Lecture Five-Philosophy of AI and cognitive science"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="【nature主编】Making your research count"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="Philosophical Foundations of Cognitive Science系列讲座四：Lecture Four- Philosophy of Neuroscience and Cognitive Science"
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="Navicat 与数据库应用案例分享"
+                    android:textSize="20sp" />
+                
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:lines="2"           
+					android:ellipsize="end"
+					android:background="@drawable/shape"  
+                    android:text="海外名师大讲堂---Design of materials properties by microstructure and external fields"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/bottom"
         android:layout_width="match_parent"
-        android:layout_height="75sp"
+        android:layout_height="70sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" >
 
-        
-        
         <Button
             android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="通知讲座"
-            android:drawableTop="@drawable/main" />
+            android:drawableTop="@drawable/main"
+            android:text="通知讲座" />
 
         <Button
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="兴趣"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/imageButton1"
-            android:drawableTop="@drawable/hobby" />
+            android:drawableTop="@drawable/hobby"
+            android:text="兴趣" />
 
         <Button
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="定时"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/imageButton2"
-            android:drawableTop="@drawable/time" />
+            android:drawableTop="@drawable/time"
+            android:text="定时" />
 
         <Button
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="个人"
-            android:layout_above="@+id/textView3"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/imageButton3"
-            android:drawableTop="@drawable/user" />
-
-        
+            android:drawableTop="@drawable/user"
+            android:text="个人" />
     </RelativeLayout>
-    
+
 </RelativeLayout>
